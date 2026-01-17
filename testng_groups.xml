@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Grouping Test 1">
+		<groups>
+			<run>
+				<include name="Vegetables"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="day29.GroupingTestNG" />
+		</classes>
+	</test>	
+	<test name="Grouping Test 2">
+		<groups>
+			<run>
+				<exclude name="Leafy"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="day29.GroupingTestNG" />
+		</classes>
+	</test>
+</suite>
